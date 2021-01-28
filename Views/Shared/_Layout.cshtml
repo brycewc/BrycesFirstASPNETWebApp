@@ -1,0 +1,34 @@
+﻿@ViewBag.Name Bryce Cindrich
+<!--Bryce Cindrich
+        Section 001
+        Group 02
+-->
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>My First Website</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="~/css/main.css" rel="stylesheet" />
+    <link rel="icon" href="~/img/favicon.ico" />
+</head>
+<body>
+    <header>
+        <h1>@ViewBag.Name</h1>
+        <menu>
+            <ul>
+                <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                <li><a asp-controller="Home" asp-action="Grade">Grade Calculator</a></li>
+            </ul>
+        </menu>
+    </header>
+
+
+    @RenderBody()
+
+    <script src="~/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/main.js"></script>
+</body>
+</html>

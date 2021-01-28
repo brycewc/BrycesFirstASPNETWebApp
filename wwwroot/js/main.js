@@ -1,10 +1,10 @@
 ﻿//Program description: Calculates and displays both a final percentage and a letter grade using the "Grade Calculator" form entries based on the weights listed in the syllabus.
-function gradeProcessing() { //runs when button is clicked in html
-    iHomework = document.getElementById('homework').value; //50
-    iGroupProject = document.getElementById('groupProject').value; //10
-    iQuizzes = document.getElementById('quizzes').value; //10
-    iExams = document.getElementById('exams').value; //20
-    iIntex = document.getElementById('intex').value; //10
+$('#gradeForm').submit(function () {
+    iHomework = $('#homework').val(); //50
+    iGroupProject = $('#groupProject').val(); //10
+    iQuizzes = $('#quizzes').val(); //10
+    iExams = $('#exams').val(); //20
+    iIntex = $('#intex').val(); //10
 
     //Determines final grade percentage based on weight from the syllabus
     iFinalGrade = ((iHomework * .5) + (iGroupProject * .1) + (iQuizzes * .1) + (iExams * .2) + (iIntex * .1));
@@ -49,6 +49,5 @@ function gradeProcessing() { //runs when button is clicked in html
     }
 
     //Output
-    sOutput = "You got a " + sLetterGrade + " in IS 413 with a " + iFinalGrade + "%"
-    document.getElementById("output").innerHTML = sOutput
-}
+    alert("You got a " + sLetterGrade + " in IS 413 with a " + iFinalGrade + "%");
+});

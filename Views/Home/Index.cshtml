@@ -2,6 +2,8 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+    ViewBag.Title = "Home";
+    ViewBag.Heading = "Bryce Cindrich";
 }
 
 <!--Bryce Cindrich
@@ -9,23 +11,15 @@
     Group 02
     Last Edited 1/17/2021
 -->
-<!DOCTYPE html>
-<html>
-<head>
-
-</head>
-<body>
-
-    <img src="~/img/activity.jpg" width="400px" />
-    <p>
-        I'm not looking to get anything out of IS 413. I enjoy using other tools that accomplish the same goal as ASP.NET if I needed to develop something that could use it.
-        Also, I'm not planning on going into anything that requires me to use ASP.NET or website development. Hopefully I can learn some more general skills like how to learn and such.
-    </p>
-    <h3>My top jobs:</h3>
-    <ol>
-        <li>Data Analyst</li>
-        <li>Technical Sales</li>
-        <li>Product Management</li>
-    </ol>
-</body>
-</html>
+<h1>@ViewBag.Heading</h1>
+<img src="~/img/activity.jpg" width="400" />
+<p>
+    I'm not looking to get anything out of IS 413. I enjoy using other tools that accomplish the same goal as ASP.NET if I needed to develop something that could use it.
+    Also, I'm not planning on going into anything that requires me to use ASP.NET or website development. Hopefully I can learn some more general skills like how to learn and such.
+</p>
+<h3>My top jobs:</h3>
+<ol>
+    <li>Data Analyst</li>
+    <li>Technical Sales</li>
+    <li>Product Management</li>
+</ol>

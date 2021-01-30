@@ -1,36 +1,39 @@
-﻿@model GradeModel
+﻿@{
+    ViewBag.Title = "Grade Calculator";
+    ViewBag.Heading = "Grade Calculator";
+}
 
-<body>
-    <h3>Grade Calculator:</h3>
-    <p>Enter the percentage received for each grade category to see your final grade.</p>
-    <form method="post" id="gradeForm">
-        <label for="homework">Homework: </label>
-        <input id="homework" asp-for="homework" type="text" />
-        <span asp-validation-for="homework"></span>
+@model GradeModel
 
-        <br />
-        <label for="groupProject">Group Project: </label>
-        <input id="groupProject" asp-for="groupProject" type="text" />
-        <span asp-validation-for="groupProject"></span>
+<h1>@ViewBag.Heading</h1>
+<p>Enter the percentage received for each grade category to see your final grade.</p>
+<form method="post" id="gradeForm">
+    <label for="homework">Homework: </label>
+    <input id="homework" asp-for="homework" type="text" />
+    <span asp-validation-for="homework"></span>
 
-        <br />
-        <label for="quizzes">Quizzes: </label>
-        <input id="quizzes" asp-for="quizzes" type="text" />
-        <span asp-validation-for="quizzes"></span>
+    <br />
+    <label for="groupProject">Group Project: </label>
+    <input id="groupProject" asp-for="groupProject" type="text" />
+    <span asp-validation-for="groupProject"></span>
 
-        <br />
-        <label for="exams">Exams: </label>
-        <input id="exams" asp-for="exams" type="text" />
-        <span asp-validation-for="exams"></span>
+    <br />
+    <label for="quizzes">Quizzes: </label>
+    <input id="quizzes" asp-for="quizzes" type="text" />
+    <span asp-validation-for="quizzes"></span>
 
-        <br />
-        <label for="intex">INTEX: </label>
-        <input id="intex" asp-for="intex" type="text" />
-        <span asp-validation-for="intex"></span>
+    <br />
+    <label for="exams">Exams: </label>
+    <input id="exams" asp-for="exams" type="text" />
+    <span asp-validation-for="exams"></span>
 
-        <br />
-        <input type="submit" value="Submit" id="gradeButton" />
-    </form>
+    <br />
+    <label for="intex">INTEX: </label>
+    <input id="intex" asp-for="intex" type="text" />
+    <span asp-validation-for="intex"></span>
 
-    <p id="output"></p>
-</body>
+    <br />
+    <input type="submit" value="Submit" id="gradeButton" />
+</form>
+
+<p id="output"></p>
